@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="./css/style.css">
+    <!-- Leaflet.js CSS Link -->
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.5.1/dist/leaflet.css"
+   integrity="sha512-xwE/Az9zrjBIphAcBb3F6JVqxf46+CDLwfLMHloNu6KEQCAWi6HcDUbeOfBIptF7tcCzusKFjFw2yuvEpDL9wQ=="
+   crossorigin=""/>
+    <title>Location Finder</title>
+</head>
+<body>
+    <header>
+        <h1>Location Finder</h1>
+    </header>
+    <div id="user-info">
+        <div id="info-inner">
+            <p>Your location information:</p>
+            <div><small>Lat & Long: <span id="latLng"></span></small></div>
+            <div><small>Zipcode: <span id="zipcode"></span></small></div>
+            <div><small>Geohash: <span id="geohash"></span></small></div>
+            <div><small>Note: Location information is gathered with a low accuracy which is the default for the GeoLocation API. This can be changed to a higher accuracy. For more information click <a href="https://developer.mozilla.org/en-US/docs/Web/API/Geolocation_API" target="_blank">here</a>.</small></div>
+            <div id="permission">
+                <small>Tip: <a href="help.html" id="settings-help">Enable</a> location permission for this site to work</small>
+            </div>
+        </div>
+    </div>
+    <div id="mapID"></div>
+    <!-- Leaflet.js Script Tag -->
+    <script src="https://unpkg.com/leaflet@1.5.1/dist/leaflet.js"
+   integrity="sha512-GffPMF3RvMeYyc1LWMHtK8EbPv0iNZ8/oTtHPx9/cc2ILxQ+u905qIwdpULaqDkyBKgOaB57QTMg7ztg8Jm2Og=="
+   crossorigin=""></script>
+   <script src="main.js"></script>
+</body>
+</html>
